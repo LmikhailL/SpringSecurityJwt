@@ -53,13 +53,13 @@ public class JwtFilter extends GenericFilterBean {
     }
 
     private Optional<String> getTokenFromRequest(HttpServletRequest request) {
-        Optional<String> bearer = Optional.ofNullable(request.getHeader(AUTHORIZATION));
-        if (bearer.isPresent() && hasText(bearer.get()) && bearer.get().startsWith("Bearer ")) {
-            return Optional.of(bearer.get().substring(7));
+        Optional<String> token = Optional.ofNullable(request.getHeader(AUTHORIZATION));
+        if (token.isPresent() && hasText(token.get()) && token.get().startsWith("Bearer ")) {
+            return Optional.of(token.get().substring(7));
 
         } else {
             log.log(Level.INFO, "Smt went wrong..." +
-                    "(Register(doesn't even have it) and Auth(it only returns token) " +
+                    "(Register and Auth(it only returns token) " +
                     "don't have token, so we can't get login from token)");
             return Optional.empty();
 
