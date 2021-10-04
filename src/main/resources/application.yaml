@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${DATASOURCE_HOST:localhost}:5432/usersInfo
+    username: postgres
+    password: admin
+
+secret: someJwtSecret
