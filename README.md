@@ -8,9 +8,10 @@
 #### *https://bit.ly/3D4IAck* - **UserDetails**
 #### *https://bit.ly/3D8ei8K* - **UserDetailsService**
 
-## Spring Security article
+## Spring Security articles
 
 #### *https://bit.ly/3uBvhxf* - **Краткий обзор Spring Security**
+#### *https://bit.ly/3oz6uZu* - **Пять простых шагов для понимания JSON Web Tokens**
 
 ## Spring Security videos
 
